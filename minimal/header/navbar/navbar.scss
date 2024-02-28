@@ -1,0 +1,102 @@
+@mixin data ($color,$l-height,$f-size){
+	color: $color;
+	line-height: $l-height;
+	font-size: $f-size;
+}
+.navbar{
+	width: 100%;
+	padding: 18px 250px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.navbar-logo{
+		display: flex;
+		gap: 18px;
+		align-items: center;
+		img{
+			width: 65px;
+			height: 70px;
+		}
+		h1{
+			@include data(#333333, 38px, 22px);
+			font-weight: 400;
+			text-transform: uppercase;
+			font-family: "oswald";
+		}
+	}
+	.navbar-items{
+		display: flex;
+		gap: 34px;
+		a{
+			@include data(#404040, 20px, 15px);
+			font-weight: 400;
+			font-family: "mont";
+			&:hover{
+				color: #8BCAC3;
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.navbar{
+		padding: 8px 50px;
+		.navbar-logo{
+			gap: 8px;
+			img{
+				width: 20px;
+				height: 25px;
+			}
+			h1{
+				@include data(#333333, 18px, 12px);
+			}
+		}
+		.navbar-items{
+			gap: 8px;
+			a{
+				@include data(#404040, 13px, 7px);
+				}
+			}
+	}
+}
+@media (min-width: 481px) and (max-width: 767px){
+	.navbar{
+		padding: 11px 70px;
+		.navbar-logo{
+			gap: 13px;
+			img{
+				width: 35px;
+				height: 40px;
+			}
+			h1{
+				@include data(#333333, 24px, 18px);
+			}
+		}
+		.navbar-items{
+			gap: 20px;
+			a{
+				@include data(#404040, 16px, 10px);
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	.navbar{
+		padding: 15px 100px;
+		.navbar-logo{
+			gap: 16px;
+			img{
+				width: 40px;
+				height: 45px;
+			}
+			h1{
+				@include data(#333333, 26px, 20px);
+			}
+		}
+		.navbar-items{
+			gap: 25px;
+			a{
+				@include data(#404040, 17px, 11px);
+			}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+@mixin data ($color,$l-height,$f-size){
+	color: $color;
+	line-height: $l-height;
+	font-size: $f-size;
+}
+.footer1{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	padding: 69px 250px;
+	background-color: #F5F5F5;
+	img{
+		width: 100px;
+		height: 100px;
+	}
+	.footer1-items{
+		width: 100%;
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		.footer1-item{
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;
+			h2{
+				@include data(#333,58px,50px);
+				font-weight: 400;
+				font-family: "vollcorn";
+				text-align: center;
+			}
+			.footer1-itemImg{
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				align-items: center;
+				img{
+					width: 100px;
+					height: 100px;
+				}
+				p{
+					@include data(#ABABAB,38px,30px);
+					font-weight: 400;
+					font-family: "mont";
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.footer1{
+		gap: 50px;
+		padding: 10px 60px;
+		img{
+			width: 30px;
+			height: 30px;
+		}
+		.footer1-items{
+			width: 100%;
+			justify-content: center;
+			.footer1-item{
+				width: 50%;
+				gap: 50px;
+				h2{
+					@include data(#333,20px,14px);
+				}
+				.footer1-itemImg{
+					gap: 30px;
+					img{
+						width: 30px;
+						height: 30px;
+					}
+					p{
+						@include data(#ABABAB,18px,10px);
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.footer1{
+		gap: 70px;
+		padding: 20px 100px;
+		img{
+			width: 50px;
+			height: 50px;
+		}
+		.footer1-items{
+			width: 100%;
+			justify-content: center;
+			.footer1-item{
+				width: 60%;
+				gap: 60px;
+				h2{
+					@include data(#333,22px,16px);
+				}
+				.footer1-itemImg{
+					gap: 30px;
+					img{
+						width: 30px;
+						height: 30px;
+					}
+					p{
+						@include data(#ABABAB,20px,12px);
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.footer1{
+		gap: 90px;
+		padding: 30px 150px;
+		img{
+			width: 70px;
+			height: 70px;
+		}
+		.footer1-items{
+			width: 100%;
+			justify-content: center;
+			.footer1-item{
+				width: 60%;
+				gap: 60px;
+				h2{
+					@include data(#333,26px,20px);
+				}
+				.footer1-itemImg{
+					gap: 30px;
+					img{
+						width: 50px;
+						height: 50px;
+					}
+					p{
+						@include data(#ABABAB,26px,20px);
+					}
+				}
+			}
+		}
+	}
+}

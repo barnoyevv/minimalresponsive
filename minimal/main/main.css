@@ -1,0 +1,7 @@
+@import url(./thrives/thrives.css);
+@import url(./team/team.css);
+@import url(./projects/projects.css);
+.main {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */

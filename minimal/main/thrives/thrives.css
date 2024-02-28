@@ -1,0 +1,199 @@
+.main-thrives .main-thrivesHeader .main-ThrivesLine {
+  width: 20%;
+  height: 2px;
+  border: none;
+}
+
+.main-thrives {
+  padding: 69px 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  justify-content: center;
+  align-items: center;
+}
+.main-thrives .main-thrivesHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+.main-thrives .main-thrivesHeader h2 {
+  color: #333;
+  line-height: 40px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "mont";
+  text-transform: uppercase;
+}
+.main-thrives .main-thrivesHeader .main-ThrivesLine {
+  background: rgba(0, 0, 0, 0.0901960784);
+}
+.main-thrives .main-ThrivesItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.main-thrives .main-ThrivesItems .main-ThrivesItem {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 0px 10px;
+}
+.main-thrives .main-ThrivesItems .main-ThrivesItem img {
+  width: 100%;
+  height: 300px;
+}
+.main-thrives .main-ThrivesItems .main-ThrivesItem-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-thrives .main-ThrivesItems .main-ThrivesItem-text h3 {
+  color: #333;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "mont";
+  text-transform: uppercase;
+}
+.main-thrives .main-ThrivesItems .main-ThrivesItem-text p {
+  color: #333;
+  line-height: 30px;
+  font-size: 23px;
+  font-family: "vollcorn";
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .main-thrives {
+    padding: 20px 60px;
+    gap: 15px;
+  }
+  .main-thrives .main-thrivesHeader {
+    gap: 15px;
+  }
+  .main-thrives .main-thrivesHeader h2 {
+    color: #333;
+    line-height: 18px;
+    font-size: 12px;
+  }
+  .main-thrives .main-thrivesHeader .main-ThrivesLine {
+    height: 1px;
+  }
+  .main-thrives .main-ThrivesItems {
+    gap: 20px;
+    justify-content: center;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem {
+    width: 80%;
+    gap: 15px;
+    padding: 0px 5px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem img {
+    width: 100%;
+    height: 150px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text {
+    gap: 10px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text h3 {
+    color: #333;
+    line-height: 16px;
+    font-size: 10px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text p {
+    color: #333;
+    line-height: 16px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .main-thrives {
+    padding: 30px 100px;
+    gap: 20px;
+  }
+  .main-thrives .main-thrivesHeader {
+    gap: 20px;
+  }
+  .main-thrives .main-thrivesHeader h2 {
+    color: #333;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .main-thrives .main-thrivesHeader .main-ThrivesLine {
+    height: 1px;
+  }
+  .main-thrives .main-ThrivesItems {
+    gap: 20px;
+    justify-content: center;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem {
+    width: 70%;
+    gap: 25px;
+    padding: 0px 5px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem img {
+    width: 100%;
+    height: 170px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text {
+    gap: 10px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text h3 {
+    color: #333;
+    line-height: 18px;
+    font-size: 12px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text p {
+    color: #333;
+    line-height: 18px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-thrives {
+    padding: 40px 150px;
+    gap: 30px;
+  }
+  .main-thrives .main-thrivesHeader {
+    gap: 30px;
+  }
+  .main-thrives .main-thrivesHeader h2 {
+    color: #333;
+    line-height: 28px;
+    font-size: 22px;
+  }
+  .main-thrives .main-thrivesHeader .main-ThrivesLine {
+    height: 2px;
+  }
+  .main-thrives .main-ThrivesItems {
+    gap: 30px;
+    justify-content: center;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem {
+    width: 50%;
+    gap: 30px;
+    padding: 0px 10px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem img {
+    width: 100%;
+    height: 250px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text {
+    gap: 20px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text h3 {
+    color: #333;
+    line-height: 24px;
+    font-size: 18px;
+  }
+  .main-thrives .main-ThrivesItems .main-ThrivesItem-text p {
+    color: #333;
+    line-height: 24px;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=thrives.css.map */

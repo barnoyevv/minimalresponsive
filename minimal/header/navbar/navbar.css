@@ -1,0 +1,114 @@
+.navbar {
+  width: 100%;
+  padding: 18px 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-logo {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.navbar .navbar-logo img {
+  width: 65px;
+  height: 70px;
+}
+.navbar .navbar-logo h1 {
+  color: #333333;
+  line-height: 38px;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "oswald";
+}
+.navbar .navbar-items {
+  display: flex;
+  gap: 34px;
+}
+.navbar .navbar-items a {
+  color: #404040;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "mont";
+}
+.navbar .navbar-items a:hover {
+  color: #8BCAC3;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 50px;
+  }
+  .navbar .navbar-logo {
+    gap: 8px;
+  }
+  .navbar .navbar-logo img {
+    width: 20px;
+    height: 25px;
+  }
+  .navbar .navbar-logo h1 {
+    color: #333333;
+    line-height: 18px;
+    font-size: 12px;
+  }
+  .navbar .navbar-items {
+    gap: 8px;
+  }
+  .navbar .navbar-items a {
+    color: #404040;
+    line-height: 13px;
+    font-size: 7px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar {
+    padding: 11px 70px;
+  }
+  .navbar .navbar-logo {
+    gap: 13px;
+  }
+  .navbar .navbar-logo img {
+    width: 35px;
+    height: 40px;
+  }
+  .navbar .navbar-logo h1 {
+    color: #333333;
+    line-height: 24px;
+    font-size: 18px;
+  }
+  .navbar .navbar-items {
+    gap: 20px;
+  }
+  .navbar .navbar-items a {
+    color: #404040;
+    line-height: 16px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 15px 100px;
+  }
+  .navbar .navbar-logo {
+    gap: 16px;
+  }
+  .navbar .navbar-logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .navbar .navbar-logo h1 {
+    color: #333333;
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .navbar .navbar-items {
+    gap: 25px;
+  }
+  .navbar .navbar-items a {
+    color: #404040;
+    line-height: 17px;
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=navbar.css.map */

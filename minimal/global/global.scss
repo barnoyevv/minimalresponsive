@@ -1,0 +1,32 @@
+@import url(../footer/footer.css);
+@import url(../main/main.css);
+@import url(../header/header.css);
+
+@font-face {
+	font-family: "oswald";
+	src: url(../oswald/Oswald-Medium.ttf) format(truetype);
+}
+@font-face {
+	font-family: "mont";
+	src: url(../montserrat/Montserrat-Regular.ttf) format(truetype);
+}
+@font-face {
+	font-family: "vollcorn";
+	src: url(../vollcorn/Vollkorn-Regular.ttf);
+}
+@font-face {
+	font-family: "vollcorn-italic";
+	src: url(../vollcorn/Vollkorn-Italic.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+.website{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
